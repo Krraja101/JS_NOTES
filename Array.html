@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <hr />
+    <a href="index.html">Home</a>
+    <hr />
+    <h1>
+      <i><u>Array</u></i> :
+    </h1>
+    <ul>
+      <li>
+        It is a collection of homogeneous as well as hetrogeneous elements.
+      </li>
+      <li>Representation of array is [elements].</li>
+      <li>
+        It is limitless means we can store n no of elements in the array without
+        specifying the size.
+      </li>
+      <li>
+        If we will try to access the elements by index and if at that idex there
+        is no elements then it will return undefined.
+      </li>
+      <br />
+      <li>
+        EX:-<br />let arr=[12,23,34,45]<br />
+        console.log(arr[3])//45--(because at 3rd index 45 is present.) <br />
+        console.log(arr[30])//undefined--(because at 30th index there is no
+        elements are present).
+      </li>
+      <br />
+      <li>let arr=['hi',0,true,null,undefined]</li>
+      <li>
+        In above example inside arr variable we have stored all the data types
+        it supports all the data types.
+      </li>
+    </ul>
+    <h3>
+      <i><u>Some important methods of array</u> :</i>
+    </h3>
+    <ol>
+      <li><b>pop() :</b></li>
+      <ul>
+        <li>
+          It is a method which is used to delete the last element of an array
+        </li>
+        <br />
+        <li>
+          EX:-<br />let arr=[12,23,34,45]<br />
+          arr.pop()<br />
+          console.log(arr)//[12,23,34]--last element 45 removed.
+        </li>
+      </ul>
+      <br />
+
+      <li><b>push() :</b></li>
+      <ul>
+        <li>
+          It is a method which is used to add an element at last index to an
+          array.
+        </li>
+        <br />
+        <li>
+          EX:-<br />let arr=[12,23,34,45]<br />
+          arr.push(100)<br />
+          console.log(arr)//[12,23,34,45,100]--an element added at last index .
+        </li>
+      </ul>
+      <br />
+
+      <li><b>shift() :</b></li>
+      <ul>
+        <li>
+          It is a method which is used to delete the first element of an array.
+        </li>
+        <br />
+        <li>
+          EX:-<br />let arr=[12,23,34,45]<br />
+          arr.shift()<br />
+          console.log(arr)//[23,34,45]--first element 12 removed.
+        </li>
+      </ul>
+      <br />
+
+      <li><b>unshift() :</b></li>
+      <ul>
+        <li>
+          It is a method which is used to add element at first index to an
+          array.
+        </li>
+        <br />
+        <li>
+          EX:-<br />let arr=[12,23,34,45]<br />
+          arr.unshift(230)<br />
+          console.log(arr)//[230,12,23,34,45]--an element 230 added at first
+          index.
+        </li>
+      </ul>
+      <br />
+
+      <li><b>splice() :</b></li>
+      <ul>
+        <li>
+          It is a method used to add and delete elements at a same time in a
+          array.
+        </li>
+        <li>splice method affects the original array.</li>
+        <li>It will accept more than two arguments.</li>
+        <li>
+          <mark
+            >Syntax :splice(Star index,no of element to delete, which all
+            elements to be added)</mark
+          >
+        </li>
+        <br />
+        <li>
+          EX:- <br />
+          let a=[1,2,3,4,6,5]<br />
+          let b = a.splice(2,2,8)//[3,4]--(It returns the deleted items from
+          array.)<br />
+          console.log(a)//[1,2,8,6,5]--(The array which restructured after using
+          splice method.)
+        </li>
+      </ul>
+      <br />
+
+      <li><b>slice() :</b></li>
+      <ul>
+        <li>
+          It is a method which is used to take out sliced elements from the
+          original array.
+        </li>
+        <li>It will not affect the original array.</li>
+        <li>It will accept 2 arguments.</li>
+        <li>End index will always be ignored.</li>
+        <li><mark>Syntax : slice(start index,end index)</mark></li>
+        <br />
+        <li>
+          EX:-<br />
+          let a=[1,2,3,4,5]<br />
+          let b=a.slice(2,3)<br />
+          console.log(b)//[3]
+        </li>
+      </ul>
+      <br />
+
+      <li><b>includes() :</b></li>
+      <ul>
+        <li>
+          It is a method used to check weather the elements which is being
+          passed as a argument is present inside the array or not.
+        </li>
+        <li>includes will always returns "Boolean value".</li>
+        <li>
+          <mark
+            >Syntax : includes(element as a argument to check the
+            presence)</mark
+          >
+        </li>
+        <br />
+        <li>
+          EX:-<br />
+          let a=[1,2,3,4,5]<br />
+          let b=a.includes(2)<br />
+          console.log(b)//true
+        </li>
+      </ul>
+      <br />
+
+      <li><b>indexOf() :</b></li>
+      <ul>
+        <li>It is a method used to check index of a particular element.</li>
+        <li>
+          indexof method will returns index value of an element from an array.
+        </li>
+        <li>
+          <mark
+            >Syntax : indexof(element as a argument to get the index value of
+            that element)</mark
+          >
+        </li>
+        <br />
+        <li>
+          EX:-<br />
+          let a=[1,2,3,4,5]<br />
+          let b=a.indexOf(4)<br />
+          console.log(b)//3
+        </li>
+        <li>
+          If the element which is passed as a argument in the indexOf method is
+          not present in the respected array then it will return -1.
+        </li>
+      </ul>
+      <br />
+
+      <li><b>concat() :</b></li>
+      <ul>
+        <li>
+          It is a method used to merge multiple arrays into a single array.
+        </li>
+        <li>It can take multiple elements as arguments.</li>
+        <li><mark>Syntax : concat(arguments)</mark></li>
+        <br />
+        <li>
+          EX:-<br />
+          let a=[1,2,3,4,5]<br />
+          let b=[6,7,8]<br />
+          let c=[9,10]<br />
+          let d=a.concat(b,c)<br />
+          console.log(d)//[1,2,3,4,5,6,7,8,9,10]
+        </li>
+      </ul>
+      <br />
+
+      <li><b>reverse() :</b></li>
+      <ul>
+        <li>It is used to reverse the elements present in the array.</li>
+        <li>It returns the array.</li>
+        <li><mark>Syntax : reverse()</mark></li>
+        <br />
+        <li>
+          EX:-<br />
+          let a=[1,2,3,4,5]<br />
+          let d=a.reverse()<br />
+          console.log(d)//[5,4,3,2,1]
+        </li>
+      </ul>
+      <br />
+      <li><b>join() :</b></li>
+      <ul>
+        <li>It is used to join the elements present in the array.</li>
+        <li><mark>Syntax : join("")</mark></li>
+        <br />
+        <li>
+          EX:-<br />
+          let a=[1,2,3,4,5]<br />
+          let d=a.join()<br />
+          console.log(d)//12345
+        </li>
+      </ul>
+    </ol>
+
+    <hr />
+    <div class="bottom">
+      <div>
+        <a href="string.html"><big>Previous</big></a>
+      </div>
+      <div>
+        <a href="object.html"><big>Next</big></a>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>

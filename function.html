@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <hr />
+    <a href="index.html">Home</a>
+    <hr />
+    <h1>
+      <i><u>Function</u></i> :
+    </h1>
+
+    <li>
+      named block of instruction which is used to perform a specific task.
+    </li>
+    <li>function get executed only when it is called.</li>
+    <li>the main advantage is we can achieve code reuseability.</li>
+    <li>
+      Main purpose is code reuseability which means code once declared can be
+      used anywhere.
+    </li>
+    <li>We can create function in two ways</li>
+    <ol>
+      <b><li>Using function declaration statement(function statement)</li></b>
+      <br />
+      <ul>
+        <li>
+          function identifier(parameter,parameter.........){ <br />
+          statement <br />
+          }
+        </li>
+        <p><mark>NOTE:-</mark></p>
+        <li>Function is an object.</li>
+        <li>
+          Name of a function is a variable which holds the reference of function
+          object.
+        </li>
+        <li>
+          Creating a function using function statement supports function
+          hoisting therefore we can also use a function before function
+          declaration.
+        </li>
+        <li>EX:-</li>
+        <p>
+          log(test); <br />
+          finction test(){ <br />
+          log('hi'); <br />
+          } <br />
+          log("end");
+        </p>
+        <li>
+          When we try to log the function name the entire function will be
+          printed.
+        </li>
+
+        <h3>PARAMETERS :-</h3>
+        <li>
+          The variable declared in the function defination/declaration is known
+          as parameter.
+        </li>
+        <li>
+          The parameters have local scope,these can be used inside the function
+          body .
+        </li>
+        <li>
+          parameters are used to hold the values which is passed during the
+          calling a function.
+        </li>
+        <li>EX:-</li>
+        <p>
+          function sum(a,b){ <br />
+          log(a+b) <br />
+          }
+        </p>
+        <li>Here a & b are local variables to the sum function.</li>
+
+        <h3>ARGUMENTS:-</h3>
+        <li>
+          The values passed in the function call statement is known as
+          arguments.
+        </li>
+        \
+        <li>
+          An argument can be a literal,variable or an expression which results a
+          value.
+        </li>
+        <li>EX:-</li>
+        <p>sum(10,20) --> Here 10 & 20 are literals and used as arguments</p>
+
+        <h3>
+          <i><u>RETURN</u> :</i>
+        </h3>
+        <li>
+          It is a keyword used as control transfer statement in a function.
+        </li>
+        <li>
+          Return will stop the execution of the function and transfers the
+          control along with data to the caller.
+        </li>
+        <li>EX:-</li>
+        <p>
+          function Meter(centi){ <br />
+          return (centi/100) <br />
+          } <br />
+          log(Meter(90))//0.9
+        </p>
+        <br />
+      </ul>
+
+      <b> <li>Function with expression</li></b>
+      <br />
+      <ul>
+        <li>
+          <mark
+            >Syntax :- var/let/const identifier=function (){.....body......}
+          </mark>
+        </li>
+        <li>In this Syntax the function is used as value.</li>
+        <h2>Disadvantage :-</h2>
+        <li>
+          The function is not hoisted , we can't use the function before
+          declaration.
+        </li>
+        <li>
+          Reason :- Function is not hoisted instead variable is hoisted and
+          assigned with default value undefined.
+        </li>
+        <li>EX:-</li>
+        <p>
+          var a=function(){ <br />
+          log('hello world') <br />
+          } <br />
+          log(a); // whole function body will be printed. <br />
+          a(); // hello world will be printed (function calling). a=10; log(a);
+          // 10 because of reinitialization. a(); // --> error, 'a' is not a
+          function function because a is changed to number type from funtion.
+        </p>
+        <li>
+          This we call variable is of dynamic type. I can changed variable value
+          during run time.
+        </li>
+        <h3>Scope with respect to function : -</h3>
+        <li>Any member declared inside a function will have local scope.</li>
+
+        <p>Local Scope :</p>
+        <li>The scope within the function block is known as local scope.</li>
+        <li>
+          Any member with local scope can be used outside the function block.
+        </li>
+        <li>A parameter of a function will have local scope. <br /></li>
+      </ul>
+
+      <b><li>Anonymous function</li></b>
+      <br />
+      <ul>
+        <li>
+          A function declared without any identifier is known as anonymous
+          function.
+        </li>
+        <li>EX:-</li>
+        <p>
+          function (){ <br />
+          .....body..... <br />
+          }
+        </p>
+        <li>
+          We cant use it explicitely we need to use it with function with
+          expression.
+        </li>
+        <li>We cant call this function directly due to lack of identifier.</li>
+        <br />
+      </ul>
+      <b
+        ><li>Parameterised function</li>
+        <br />
+        <li>Function with return type</li>
+        <br />
+        <li>Nested function</li></b
+      >
+      <br />
+      <ul>
+        <li>EX:-</li>
+        <p>
+          function a(){ <br />
+          function b(){ <br />
+          ......body..... <br />
+          } <br />
+          }
+        </p>
+        <p><mark>NOTE: -</mark></p>
+        <li>
+          b is a local function to function a and can't be called from outside.
+        </li>
+        <li>
+          Inside a function we can always use the members of global scope.
+        </li>
+        <li>EX:-</li>
+        <p>
+          var city='bangalore' <br />
+          function dis(name){ <br />
+          log(${name} belong to ${city}); <br />
+          } <br />
+          dis('sheela');
+        </p>
+        <li>
+          In the above example variable name has local scope and variable city
+          has global scope,it is observed inside function body we can use both
+          the variable name & city.
+        </li>
+        <br />
+      </ul>
+      <b><li>Methods</li></b>
+      <br />
+      <ul>
+        <li>The function present in the object is known as methods.</li>
+        <br />
+      </ul>
+      <b> <li>Immediate invoke function expression</li></b>
+      <br />
+      <ul>
+        <li>
+          This is used to execute anonymous function at the time of creation.
+        </li>
+        <li>EX :-</li>
+        <p>
+          let x=(function () <br />
+          { <br />
+          console.log("hi"); <br />
+          return 'bye' <br />
+          })() <br />
+          console.log(x); // hi bye <br />
+        </p>
+      </ul>
+      <b> <li>Arrow function</li></b>
+      <br />
+      <ul>
+        <li>Arrow function was introduced from ES-6 version of java script.</li>
+        <li><mark>Syntax :</mark> (parameters list,................) => {}</li>
+        <li>Arrow function can return values in two ways :</li>
+        <li>EX: -let x=(a) =>a+a console.log(x(10)); // 20</li>
+        <ol>
+          <li>Implicit return</li>
+          <ul>
+            <li>Writting return kwyword is not mandatory in this type.</li>
+            <li>
+              <mark>Syntax :</mark> (parameters list,................) =>
+              expression
+            </li>
+            <li>
+              EX: - let x=() => 'hi'; <br />
+              log(x()) // hi -->if we try to print x only then it will print
+              who;e function.
+            </li>
+          </ul>
+          <li>Explicit return</li>
+          <ul>
+            <li>Writting return kwyword is mandatory in this type otherwise</li>
+            <li>
+              <mark>Syntax :</mark> (parameters list,................) =>{return
+              expression }
+            </li>
+            <li>
+              EX: - let x=() => { return'hi';} <br />
+              log(x()) // hi
+            </li>
+            <p><mark>NOTES :</mark></p>
+            <li>Parameter are optinal.</li>
+            <li>
+              If the function having only statement,then block is optional.
+            </li>
+            <li>
+              It is mandatory to write curly braces if return keyword is used.
+            </li>
+            <br />
+          </ul>
+        </ol>
+      </ul>
+
+      <b><li>Callback function</li></b>
+      <br />
+      <ul>
+        <li>
+          Passing a function as a argument to another function is known as
+          callback function.
+        </li>
+        <p><b>Advantage :</b></p>
+        <li>
+          Instead of creating a function with specific task ,functional
+          programming helps programmer to generate function which can function a
+          generic task by accepting a function as a argument.
+        </li>
+        <li>EX :-</li>
+        <p>
+          function operation(a,b,task){ <br />
+          let res=task(a,b); <br />
+          return res; <br />
+          } <br />
+          let res1=operation(10,20,function add(m,n){return m+n; }); <br />
+          log(res1);
+        </p>
+        <li>In above example function add is a callback function.</li>
+        <br />
+      </ul>
+      <b> <li>Higher order function</li></b>
+      <br />
+      <ul>
+        <li>
+          A function which accept a function as parameter is known as higher
+          order function.
+        </li>
+        <li>EX :-</li>
+        <p>
+          function operation(a,b,task){ <br />
+          let res=task(a,b); <br />
+          return res; <br />
+          } <br />
+          let res1=operation(10,20,function add(m,n){return m+n; }); <br />
+          log(res1);
+        </p>
+        <li>In above example function operation is a higher order function.</li>
+        <br />
+      </ul>
+      <b><li>Constructor function</li></b>
+      <br />
+      <ul>
+        <li>
+          A function which is used to create an object is known as constructor
+          function.
+        </li>
+        <li>Syntax :- function Identifier(parameter......){}</li>
+        <p><mark>NOTE :</mark></p>
+        <ul>
+          <li>
+            If the function is designed to use as a constructor then the name of
+            the function should always be UpperCamelCase.
+          </li>
+          <li>
+            List of parameter provided to the function wil be treated as the
+            keys(properties) of the object.
+          </li>
+          <li>
+            The arguments passed when the function is called will be the values.
+            we can copy the the values into the Lays of object from parameters
+            using 'this' keyword.
+          </li>
+          <li>
+            we can create an object using constructor function with the help of
+            new keyword.
+          </li>
+          <li>Syntax :- new function()</li>
+          <li>"new" creates the object and returns its reference.</li>
+        </ul>
+        <li>EX :-</li>
+        <p>
+          function Student (sid, sname){ <br />
+          this.sid=sid; <br />
+          this.sna,e=sname; <br />
+          } <br />
+          let s1=new student(1,'A'); <br />
+          let s2=new student(2,'B'); <br />
+          let s3=new student(3,'C');
+        </p>
+      </ul>
+    </ol>
+    <li>
+      There is a function named <mark>setTimeout()</mark> which accpets two
+      argument one is function reference and time in micro second to make a
+      specific time delay to the function in the execution.
+    </li>
+
+    <hr />
+    <div class="bottom">
+      <div>
+        <a href="object.html"><big>Previous</big></a>
+      </div>
+      <div>
+        <a href="closure.html"><big>Next</big></a>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>
+<!-- 
+    Hotel "new creates the object and returns its reference
+
+//function construction
+
+function Student (sid, sname) (0 this.sidssid;
+
+Chis.smanewsmame
+
+28 1
+
+29 lat 11 new Student(1, '
+
+3 let s new Student(2,0 '); let 13 new Student(), 'C');
+ -->

@@ -1,0 +1,24 @@
+a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 5px;
+}
+a:hover{
+    color: green;
+    border: 2px solid green;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.06), rgba(0,0,0,0.06)), url("gjs.png");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:  black; 
+    /* background-size: 1300px; */
+    /* filter: blur(10px); */
+
+}

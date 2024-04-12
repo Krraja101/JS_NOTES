@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <hr />
+    <a href="index.html">Home</a>
+    <hr />
+    <h1>
+      <i><u>Object</u></i> :
+    </h1>
+    <li>
+      Any subtance which has its existance in the real world is known as object.
+    </li>
+    <li>
+      Every object will have properties(attributes of feeds which describe
+      them).
+    </li>
+    <li>Every object will have actions(behaviours).</li>
+    <li>EX:- <br /></li>
+    <ul>
+      <p>
+        1.car : <br />
+        properties of car- model,color,price <br />
+        actions of car - accelerate,brake,start,stop
+      </p>
+      <p>
+        2. webpage: <br />
+        properties of webpage -url,data/content on webpage <br />
+        actions of webpage - scroll, hover, click.
+      </p>
+    </ul>
+    <h3>
+      <i
+        ><u><mark>NOTE</mark></u></i
+      >
+      :
+    </h3>
+    <li>
+      In programming an object is a block of memory which represents a real
+      world.
+    </li>
+    <li>
+      <mark>OBJECT :</mark> It is block of memory which has states(variables)
+      and behaviours(function).
+    </li>
+    <li>
+      <mark>console.log(arguments);</mark> here,console is a object, dot is a
+      period or access operator and log is a function and member of console that
+      accepts arguments as data to print in console.
+    </li>
+    <li>
+      The properties of real world object are represented using variables.
+    </li>
+    <li>
+      The actionns of real world object are represented using
+      methods(functions).
+    </li>
+    <li>
+      In javascript on=bject is a collection of attributes and actions in the
+      form of key&value pairs enclosed within curly brackets {}.
+    </li>
+    <li>Key represents properties /attributes of an object.</li>
+    <li>Value represents state of an object.</li>
+    <li>In javascript we can create js object in 3 diffrent ways :-</li>
+    <ol>
+      <li>object literal{}</li>
+      <br />
+      <ul>
+        <li>
+          <mark
+            >Syntax : let var={key1:value1,key1:value1,key1:value1,....}</mark
+          >
+        </li>
+        <li>
+          we can access the value of the object with the help pf dot
+          operator(period).
+        </li>
+        <li>EX:-</li>
+        <p>
+          let ed={-----------> ed contains address of the object. <br />
+          eid:123, <br />
+          enam:'wer', <br />
+          esal:23.34 <br />
+          } <br />
+          log(empDetails) <br />
+          log(type of ed);//object
+        </p>
+        <li>
+          <i
+            ><b
+              ><u><mark>NOTE</mark></u></b
+            ></i
+          >
+          :- The objects in javascript are suitable (state of the object cab be
+          modifeied ) in nature.
+        </li>
+        <br />
+        <li>EX:-</li>
+        <p>
+          let ed={-----------> ed contains address of the object. <br />
+          eid:123, <br />
+          enam:'wer', <br />
+          esal:23.34 <br />
+          } <br />
+          ed.empsal='20.000rs' <br />
+          log(ed)
+        </p>
+        <li>To add a key & value pair into an object.</li>
+        <li><mark>Syntax : object_reference.key=value</mark></li>
+        <li>
+          <i
+            ><b
+              ><u><mark>NOTE</mark></u></b
+            ></i
+          >
+          :- If the key 7 value is not present in the object ,it creates a new
+          key & value when you search.
+        </li>
+        <br />
+        <li>EX:-</li>
+        <p>
+          let ed={-----------> ed contains address of the object. <br />
+          eid:123, <br />
+          enam:'wer', <br />
+          esal:23.34 <br />
+          } <br />
+          ed.designation='SOftware engineer' <br />
+          log(ed)//print obj with 4 args
+        </p>
+        <h4><i>TO DELETE & KEY FROM AN OBJECT :-</i></h4>
+        <li>
+          we can remove a key from an object with the help pf delete keyword.
+        </li>
+        <li><mark>Syntax : delete object_reference.key</mark></li>
+        <li>EX:-</li>
+        <p>
+          let ed={-----------> ed contains address of the object. <br />
+          eid:123, <br />
+          enam:'wer', <br />
+          esal:23.34 <br />
+          } <br />
+          delete ed.esal; <br />
+          log(ed)// print obj with 2 args bcs
+        </p>
+      </ul>
+      <br />
+      <li>using a function</li>
+      <li>using a class</li>
+    </ol>
+    <h3>
+      <i><u>Object Methods</u></i> :
+    </h3>
+    <ol>
+      <b> <li>Object.keys()</li></b>
+      <br />
+      <ul>
+        <li>
+          It is static method returns an array of a given object's own
+          enumerable string-keyed property names.
+        </li>
+        <li>EX :-</li>
+        <p>
+          let a = object.keys(car1) <br />
+          console.log(a) // ["name","brand","price"]
+        </p>
+      </ul>
+      <b><li>Object.values()</li></b>
+      <br />
+      <ul>
+        <li>
+          It is a static method returns an array of a given object's own
+          enumerable string-keyed property values.
+        </li>
+        <li>EX :-</li>
+        <p>
+          let a = object.values(car1) <br />
+          console.log(a) // ["i20",suzuki","5lakh"]
+        </p>
+      </ul>
+      <b> <li>Object.entries()</li></b>
+      <br />
+      <ul>
+        <li>
+          It is a static method retun an array of a given object's own
+          enumerabils both string-keys and property values.
+        </li>
+        <li>EX :-</li>
+        <p>
+          let a = object.entries(car1) <br />
+          console.log(a) // [["name","i20"],["brand",suzuki"],["price","5lakh"]]
+        </p>
+      </ul>
+    </ol>
+
+    <hr />
+    <div class="bottom">
+      <div>
+        <a href="Array.html"><big>Previous</big></a>
+      </div>
+      <div>
+        <a href="function.html"><big>Next</big></a>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>
+<!-- 
+ 3. Object.entries()
+
+It is a static method retun an array of a given object's own enumerabils both string-keys and property values.
+
+17 18 19 Ex: let a = Object.entries(Car1); console.log(a) // [["name","alto"],["brand", "2"], ["price", "Slakh"]]
+ -->

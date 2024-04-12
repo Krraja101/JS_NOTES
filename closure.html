@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <hr />
+    <a href="index.html">Home</a>
+    <hr />
+    <h1>
+      <i><u>Closure</u></i> :
+    </h1>
+    <li>
+      The closure is a binding of parent function variables with the child
+      function.
+    </li>
+    <li>
+      This enables a JS programmer to use parent function member inside child
+      function.
+    </li>
+    <li>EX:-</li>
+    <p>
+      function person() { <br />
+      let a =21; <br />
+      function age(){ <br />
+      return a; <br />
+      } <br />
+      return age ;<br />
+      } <br />
+      let x= person() <br />
+      log(x()); // 21
+    </p>
+    <li>
+      The above example age is a nested function of person in age function we
+      didn't declare any local variable, but still we are able to use variable a
+      which belongs to person function this is achived by closure.
+    </li>
+    <p>
+      <mark><b>NOTE-</b></mark>
+    </p>
+    <li>
+      The binding of child/inner/nesetd function with its lexical
+      environment(parent function state) is known as closure.
+    </li>
+    <li>
+      Closure helps to achieve scope chain(lexical environment) from child
+      function to parent function.
+    </li>
+    <li>
+      Closure preserves the state of parent function even after the execution of
+      the parent function is completed.
+    </li>
+    <li>A child function will have reference to the closure.</li>
+    <li>When ever parent function is called a new closure is created.</li>
+
+    <hr />
+    <div class="bottom">
+      <div>
+        <a href="function.html"><big>Previous</big></a>
+      </div>
+      <div>
+        <a href="spreadOprt.html"><big>Next</big></a>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>

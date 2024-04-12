@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <hr />
+    <a href="index.html">Home</a>
+    <hr />
+    <h1>
+      <i><u>Variables</u></i> :
+    </h1>
+    <li>
+      A named block of memory which is used to store a value is known as
+      variables (containers used to store data).
+    </li>
+    <li>
+      <mark>NOTE :</mark> In js variables are not strictly typed, it is
+      dynamically typed.
+    </li>
+    <li>
+      Therefore it is not necessary to specify type of data during variable
+      declaration.
+    </li>
+    <li>In a variable we can store any type of value.</li>
+    <li>It is mandatory to declare a variable a variable before using.</li>
+    <li><mark>Syntax : var/let/const identifier;</mark></li>
+    <p>EX :-</p>
+    <p>var a;//declaration<br />a=10;//initialization or assignment</p>
+    <li>
+      <mark>NOTE :</mark> When a variable in java script js engine implicitely
+      assign Undefined value to it.
+    </li>
+    <p>EX :-</p>
+    <p>
+      var a; <br />
+      console.log(a); //Undefined
+    </p>
+    <h3><u>Understanding execution in java script</u> :</h3>
+    <li>
+      Everytime when js engine run as js code, it will first create a
+      <i
+        ><b><big>"Global execution context"</big></b></i
+      >.
+    </li>
+    <li>The global execution context has two phases :</li>
+    <ol>
+      <li><b>Variable phase</b></li>
+      <ul>
+        <li>
+          All the memory is allocated for the declarationin in top to bottom
+          order & assigned by default value
+          <mark
+            ><big
+              ><b><i>"Undefined"</i></b></big
+            ></mark
+          >
+          in variable area of global execution context.
+        </li>
+      </ul>
+      <li><b>Funtional/Executional phase</b></li>
+      <ul>
+        <li>
+          All the instructions get executed in top to bottom order in execution
+          area of global execution context.
+        </li>
+      </ul>
+    </ol>
+    <h3><u>Variable hoisting</u> :</h3>
+    <li>
+      JS allows a programmer to use a number (variable) before the declaration
+      statement, this charcteristics is known as variable hoisting.
+    </li>
+    <li>
+      Variable hoisting is only supported by
+      <mark
+        ><big
+          ><b><i>"var"</i></b></big
+        ></mark
+      >
+      where as let and const doesn't support variable hoisting.
+    </li>
+    <hr />
+    <div class="bottom">
+      <div>
+        <a href="token.html"><big>Previous</big></a>
+      </div>
+      <div>
+        <a href="string.html"><big>Next</big></a>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>

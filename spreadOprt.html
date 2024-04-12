@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <hr />
+    <a href="index.html">Home</a>
+    <hr />
+    <h1>
+      <i><u>Spread operator & Rest parameter</u></i> :
+    </h1>
+    <h2>
+      <i><u>Rest parameter</u></i> :
+    </h2>
+    <ul>
+      <li>
+        Rest parameter is used to accept multiple values as an array of
+        elements.
+      </li>
+      <li>Generally it converts multiple values into an array.</li>
+      <li>Syntax : -> <mark>...identifier</mark></li>
+      <h3>
+        <i><u>Uses of rest parameter</u></i> :
+      </h3>
+      <li>
+        Rest parameter can be used in function defination parameter list to
+        accept multiple values .
+      </li>
+      <li>It can also be used in array an object destructuring.</li>
+      <h3>
+        <i><u>Using rest parameter in function</u></i> :
+      </h3>
+      <li>
+        The function can receive multiple arguments passed by caller and store
+        them in a array.
+      </li>
+      <li>EX :-</li>
+      <p>
+        function check(a,...b) { <br />
+        log(a); // 10 <br />
+        log(b); // [20,30] <br />
+        } <br />
+        check(10,20,30);
+      </p>
+      <p><mark>NOTE -</mark></p>
+      <li>Rest parameter is always used at the last.</li>
+      <li>EX :-</li>
+      <p>
+        function check(...a,b) { <br />
+        log(a); <br />
+        log(b); // sysntax error: rest parameter must be last found <br />
+        } <br />
+        check(10,20,30);
+      </p>
+    </ul>
+    <h2>
+      <i><u>Spread operator</u></i> :
+    </h2>
+    <ul>
+      <li>
+        It is used to perform unpacking, it uses an iterator to access each n
+        every element or a property present in the array pr object.
+      </li>
+      <li>It can also be used in array an object destructuring.</li>
+      <li>EX :-</li>
+      <ol>
+        <li>Array</li>
+        <p>
+          let a [10,20,30]; <br />
+          console.log(Math.(...)); //30, using spread operator <br />
+          console.log(Math.min(...a)); //10 <br />
+          console.log(Math.max(a[0],a[1],a[2])); <br />
+          console.log(Math.max(a)); //NaN <br />
+          console.log(a);
+        </p>
+        <br />
+
+        <li>Object</li>
+        <p>
+          let obj1= { <br />
+          id:123, <br />
+          company: 'Google', <br />
+          salary: '5lpa' <br />
+          } <br />
+
+          let obj2 = { <br />
+          nase: 'Amit', <br />
+          ...obj1; <br />
+          } <br />
+
+          console.log(obj2);
+        </p>
+      </ol>
+    </ul>
+
+    <hr />
+    <div class="bottom">
+      <div>
+        <a href="closure.html"><big>Previous</big></a>
+      </div>
+      <div>
+        <a href="mathObject.html"><big>Next</big></a>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>

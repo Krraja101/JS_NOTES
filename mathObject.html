@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <hr />
+    <a href="index.html">Home</a>
+    <hr />
+    <h1>
+      <i><u>Math Object</u></i> :
+    </h1>
+    <ol>
+      <b><li>Math.max():</li></b>
+      <ul>
+        <li>
+          It always gives you maximum value from the given list of numbers.
+        </li>
+        <li>EX :-</li>
+        <p>
+          let highValue = Math.max(10,20,52,85,5,10) <br />
+          console.log(highValue) // 85 <br />
+        </p>
+      </ul>
+
+      <b><li>Math.min():</li></b>
+      <ul>
+        <li>
+          It always gives you minimum value from the given list of numberss.
+        </li>
+        <li>EX :-</li>
+        <p>
+          let lowValue = Math.min(2, 85, 45, -5) <br />
+          console.log(lowValue) // -5 <br />
+        </p>
+      </ul>
+
+      <b><li>Math.round():</li></b>
+      <ul>
+        <li>It always gives you round of value for the given number.</li>
+        <li>EX :-</li>
+        <p>
+          let roundup = Math.round(14.5) <br />
+          console.log(roundup) // 15 <br />
+        </p>
+      </ul>
+
+      <b><li>Math.ceil():</li></b>
+      <ul>
+        <li>It always gives you maximum nearest value for the given number.</li>
+        <li>EX :-</li>
+        <p>
+          let ceilingValue = Math.ceil(14.1) <br />
+          console.log(ceilingValue) // 15 <br />
+        </p>
+      </ul>
+
+      <b><li>Math.floor():</li></b>
+      <ul>
+        <li>It always gives you minimum nearest value for the given number.</li>
+        <li>EX :-</li>
+        <p>
+          let floorValue = Math.floor(14.1) <br />
+          console.log(floorValue) // 14
+        </p>
+      </ul>
+    </ol>
+    <p>
+      <br />
+    </p>
+
+    <hr />
+    <hr />
+
+    <h1>
+      <i><u>Type Coercion</u></i> :
+    </h1>
+
+    <ul>
+      <li>
+        the process of converting one type of data into another type of data by
+        35 engine implicitly(implicit typecasting), when a wrong type of data is
+        used in the expression is known as type coercion(or implicit type
+        casting).
+      </li>
+      <li>EX:-</li>
+      <p>
+        console.log(10+'20');//1020, number is coverted to string <br />
+        console.log(10-'2');//8,string is coverted to number <br />
+        console.log(5-"a");//hall, the string does not a have valid numeric
+        value, hence it is converted to a special number 'NaN'.
+      </p>
+
+      <p>
+        What is Man? <br />
+        NaN(Not a Number) is number!!!
+      </p>
+
+      <li>Any arithmetic operation with NaN, result is NaN.</li>
+    </ul>
+    <br />
+
+    <hr />
+    <hr />
+
+    <h1>
+      <i><u>Equality</u></i> :
+    </h1>
+
+    <table border="2">
+      <tr>
+        <th>S. No.</th>
+        <th>Key</th>
+        <th>Double Equal</th>
+        <th>Triple Equal</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Naming</td>
+        <td>Double equals named as Equality Operator.</td>
+        <td>Triple equals named as Identity / Strict equality Operator.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Comparison</td>
+        <td>Double equals used as Type converting the conversion</td>
+        <td>
+          Triple equals used as operands strict conversion without performing
+          any conversion in operands.
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Syntax</td>
+        <td>Double equals has syntax for comparison as (a == b)</td>
+        <td>Triple equals has syntax for comparison as (a === b)</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Implementation</td>
+        <td>
+          Double equals first convert the operands into the same type and then
+          compare i.e comparison would perform once both the operands are of the
+          same type. This is also known as type coercion comparison.
+        </td>
+        <td>
+          On the other hand, triple equals do not perform any type of conversion
+          before comparison and return true only if type and value of both
+          operands are exactly the same.
+        </td>
+      </tr>
+    </table>
+    <br />
+
+    <hr />
+    <hr />
+
+    <h1>
+      <i><u>Looping statement</u></i> :
+    </h1>
+    <li>There are four type of looping statement.</li>
+    <p><mark>let arr=[10,20,30,40]</mark></p>
+    <ol>
+      <li>for in loop</li>
+      <ul>
+        <p>
+          for(let index in arr) {<br />
+          log(index) ---> it returns index value at which elements are
+          present.<br />
+          }
+        </p>
+      </ul>
+      <li>for of loop</li>
+      <ul>
+        <p>
+          for(let value of arr) {<br />
+          log(value) ---> it returns index value at which elements are
+          present.<br />
+          }
+        </p>
+      </ul>
+      <li>for each loop</li>
+      <ul>
+        <p>
+          arr.forEach((a,b)=>{<br />
+          log(a,b) ---> here a represents value and b represents index
+          number.<br />
+          })
+        </p>
+        <li>The output will be individual values not an array.</li>
+      </ul>
+      <li>Map</li>
+      <ul>
+        <p>
+          arr.map((a,b)=>{ <br />
+          log(a) <br />
+          }) <br />
+        </p>
+      </ul>
+    </ol>
+    <li>So here we use for in loop for iterate through index numbers.</li>
+    <li>
+      For of loop ia used to iterate through index values which are not that
+      muchh important.
+    </li>
+    <li>For each loop is important.</li>
+
+    <h2>
+      <i><u>Map method</u></i> :
+    </h2>
+    <b
+      ><li>
+        Q. what is the difference between map method and for each method ?
+      </li></b
+    >
+    <li>
+      The diffrence is if we use return statement in forEach method by default
+      it will return undefined but map returns an array.
+    </li>
+    <ul>
+      <li>(forEach)EX :-</li>
+      <p>
+        let z=arr.forEach((a,b)=>{ <br />
+        return a; <br />
+        }) <br />
+        log(z);// UD
+      </p>
+      <li>(Map)EX :-</li>
+      <p>
+        let z=arr.map((a,b)=>{ <br />
+        return a; <br />
+        }) <br />
+        log(z);// [10,20,30,40]
+      </p>
+    </ul>
+
+    <hr />
+    <div class="bottom">
+      <div>
+        <a href="spreadOprt.html"><big>Previous</big></a>
+      </div>
+      <div>
+        <a href="mathObject.html"><big>Next</big></a>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>
